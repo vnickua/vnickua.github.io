@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "title": "CreaTone",
                 "url": "https://apps.apple.com/us/app/creatone-vibe-maker/id6782141531",
                 "iphoneUrl": "https://apps.apple.com/us/app/creatone-vibe-maker/id6782141531",
-                "androidUrl": "https://play.google.com/store/apps/details?id=com.creatone.vibemaker",
+                "androidUrl": "#",
                 "subtitle": "прокидайся під улюблене",
                 "logo": "img/creatone.png",
                 "gradient": "linear-gradient(135deg, #a855f7, #ec4899)"
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "title": "MapsON: карти завжди поруч!",
                 "url": "https://apps.apple.com/ua/app/mapson-%D0%BA%D0%B0%D1%80%D1%82%D0%B8-%D0%B7%D0%B0%D0%B2%D0%B6%D0%B4%D0%B8-%D0%BF%D0%BE%D1%80%D1%83%D1%87/id6744530019?l=uk",
                 "iphoneUrl": "https://apps.apple.com/ua/app/mapson-%D0%BA%D0%B0%D1%80%D1%82%D0%B8-%D0%B7%D0%B0%D0%B2%D0%B6%D0%B4%D0%B8-%D0%BF%D0%BE%D1%80%D1%83%D1%87/id6744530019?l=uk",
-                "androidUrl": "https://play.google.com/store/apps/details?id=com.vnickua.mapson",
+                "androidUrl": "#",
                 "subtitle": "додатковий опис програми",
                 "logo": "img/mapson.png",
                 "gradient": "linear-gradient(135deg, #10b981, #334155)"
@@ -69,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 const initialZIndex = index <= 2 ? (10 + index) : (10 - index);
                 item.style.zIndex = initialZIndex;
 
+                const isIphoneDisabled = (!project.iphoneUrl && !project.url) || project.iphoneUrl === '#' || project.url === '#';
+                const isAndroidDisabled = !project.androidUrl || project.androidUrl === '#';
+
                 item.innerHTML = `
                     <div class="accordion-icon logo-icon">
                         <img src="${project.logo}" alt="${project.title}" class="app-logo-img">
@@ -77,10 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h4 class="accordion-title">${project.title}</h4>
                         <p class="accordion-subtitle">${project.subtitle}</p>
                         <div class="accordion-links">
-                            <a href="${project.iphoneUrl || project.url}" target="_blank" class="accordion-link iphone-link">
+                            <a href="${isIphoneDisabled ? '#' : (project.iphoneUrl || project.url)}" target="_blank" class="accordion-link iphone-link${isIphoneDisabled ? ' disabled' : ''}">
                                 <i class="fab fa-apple"></i> iPhone
                             </a>
-                            <a href="${project.androidUrl || '#'}" target="_blank" class="accordion-link android-link">
+                            <a href="${isAndroidDisabled ? '#' : project.androidUrl}" target="_blank" class="accordion-link android-link${isAndroidDisabled ? ' disabled' : ''}">
                                 <i class="fab fa-android"></i> Android
                             </a>
                         </div>

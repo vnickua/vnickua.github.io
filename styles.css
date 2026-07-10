@@ -216,6 +216,16 @@ body {
     box-shadow: 0 2px 5px rgba(59, 163, 105, 0.2);
 }
 
+.accordion-link.disabled {
+    opacity: 0.45;
+    pointer-events: none;
+    cursor: default;
+    background-color: #e0e0e0;
+    color: #888;
+    border-color: #ccc;
+}
+
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
