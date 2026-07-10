@@ -1,17 +1,17 @@
 [
   {
     "id": 0,
-    "title": "CreaTone",
+    "title": "CreaTone - створи свій вайб",
     "url": "https://apps.apple.com/us/app/creatone-vibe-maker/id6782141531",
-    "subtitle": "тест прокидайся під улюблене",
+    "subtitle": "Рінгтон в 3  кліка з посилання на відео ТіkTokу",
     "logo": "img/creatone.png",
     "gradient": "linear-gradient(135deg, #a855f7, #ec4899)"
   },
   {
     "id": 1,
-    "title": "AziVector",
+    "title": "AziVector: векторні засічки",
     "url": "https://apps.apple.com/us/app/azivector-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D1%96-%D0%B7%D0%B0%D1%81%D1%96%D1%87%D0%BA%D0%B8/id6770594692",
-    "subtitle": "навігація всюди",
+    "subtitle": "Визнач місце загоряння в лісовому масиві за перетином векторів",
     "logo": "img/azivector.png",
     "gradient": "linear-gradient(135deg, #16a34a, #0d9488)"
   },
