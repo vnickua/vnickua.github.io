@@ -168,6 +168,55 @@ body {
     text-align: left;
 }
 
+.accordion-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.accordion-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.accordion-link i {
+    font-size: 0.85rem;
+}
+
+.accordion-link.iphone-link {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #111;
+}
+
+.accordion-link.iphone-link:hover {
+    background-color: #333;
+    border-color: #333;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-link.android-link {
+    background-color: #3ba369;
+    color: #fff;
+    border: 1px solid #3ba369;
+}
+
+.accordion-link.android-link:hover {
+    background-color: #4cd964;
+    border-color: #4cd964;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(59, 163, 105, 0.2);
+}
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .section-title {
