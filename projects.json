@@ -48,15 +48,5 @@
     "subtitle": "майстер столярства",
     "logo": "img/woodmaster.png",
     "gradient": "linear-gradient(135deg, #ea580c, #9a3412)"
-  },
-  {
-    "id": 5,
-    "title": "333WoodMaster",
-    "url": "https://apps.apple.com/ua/app/woodmaster-%D0%BB%D1%96%D1%81%D0%BE%D0%B2%D0%B8%D0%B9-%D0%BF%D0%BE%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%BA/id6746112569",
-    "iphoneUrl": "https://apps.apple.com/ua/app/woodmaster-%D0%BB%D1%96%D1%81%D0%BE%D0%B2%D0%B8%D0%B9-%D0%BF%D0%BE%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%BA/id6746112569",
-    "androidUrl": "https://play.google.com/store/apps/details?id=com.woodmaster.assistant",
-    "subtitle": "майстер столярства",
-    "logo": "img/woodmaster.png",
-    "gradient": "linear-gradient(135deg, #ea580c, #9a3412)"
   }
 ]
